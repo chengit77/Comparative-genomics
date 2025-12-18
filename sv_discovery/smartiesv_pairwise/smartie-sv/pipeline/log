@@ -1,0 +1,49 @@
+Using profile slurm for setting default command line arguments.
+Building DAG of jobs...
+SLURM run ID: 64fbe843-3a55-400a-b0cb-e2fa53c20b6b
+Using shell: /usr/bin/bash
+Provided remote nodes: 1
+Job stats:
+job         count
+--------  -------
+callSVs         1
+dummy           1
+runBlasr        1
+total           3
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Feb 21 22:16:19 2025]
+Job 2: Aligning query to target
+Reason: Missing output files: mappings/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna-A_guariba-aligned.sam
+
+Job 2 has been submitted with SLURM jobid 26200197 (log: /work/bc276/dashiell-smartiesv/smartie-sv/pipeline/.snakemake/slurm_logs/rule_runBlasr/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna_A_guariba/26200197.log).
+[Fri Feb 21 23:36:24 2025]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Feb 21 23:36:24 2025]
+Job 1: Calling SVs
+Reason: Missing output files: variants/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna-A_guariba.svs.bed; Input files updated by another job: mappings/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna-A_guariba-aligned.sam
+
+Job 1 has been submitted with SLURM jobid 26202198 (log: /work/bc276/dashiell-smartiesv/smartie-sv/pipeline/.snakemake/slurm_logs/rule_callSVs/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna_A_guariba/26202198.log).
+[Fri Feb 21 23:56:26 2025]
+Finished job 1.
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Feb 21 23:56:26 2025]
+localrule dummy:
+    input: variants/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna-A_guariba.svs.bed
+    jobid: 0
+    reason: Input files updated by another job: variants/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna-A_guariba.svs.bed
+    resources: mem_mb=120000, mem_mib=114441, disk_mb=1105, disk_mib=1054, tmpdir=/tmp, slurm_partition=goldberg,common,scavenger, slurm_account=goldberg, tasks=1, cpus_per_job=1, runtime=10000
+
+[Fri Feb 21 23:56:26 2025]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2025-02-21T221618.673789.snakemake.log
