@@ -1,0 +1,1 @@
+The filtered files will be generated here after removing duplicates in inputs files (output from smartie-sv). The script `01_call_shared_variants.sh` can be modified to delete these intermediate files after execution.
