@@ -1,9 +1,0 @@
-{
-        "install": "/work/bc276/dashiell-smartiesv/smartie-sv",
-        "targets" : {
-                  "Human" : "../example/GCF_000001405.40_GRCh38.p14_genomic.fna"
-                  },
-        "queries" : {
-                 "A_belzebul_3273"   : "../example/A_belzebul_3273_HM.cleaned.fa"
-           },
-}

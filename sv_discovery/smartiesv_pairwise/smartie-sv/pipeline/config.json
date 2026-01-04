@@ -1,9 +1,0 @@
-{ 
-        "install": "/work/bc276/dashiell-smartiesv/smartie-sv",
-        "targets" : {
-                  "GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna" : "../example/GCF_011100555.1_mCalJa1.2.pat.X_genomic.fna"
-                  },
-        "queries" : {
-                 "A_guariba"   : "../example/A_guariba_3636_HM.cleaned.fa"
-           },
-}
