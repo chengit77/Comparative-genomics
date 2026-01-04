@@ -52,7 +52,7 @@ python codeml_M2.py --directory $DIR --genes genelist.txt --outfile output_M2.tx
 
 Finally, you may import the `output.txt` and `output_M2.txt` into R or Python to perform LRT calculations.
 
-### Additional notes
+### 3. Additional notes
 If you are using **BUSCO single-copy orthologs** as genes, you will need to convert BUSCO IDS to gene names for downstream analyses. Here, we provide a custom Python pipeline in `BUSCO-to-NCBI` to perform this conversion in batch:
 
 Specifiy an input file (list of BUSCO groups to look up), target species, and the name for the output file.
